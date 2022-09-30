@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-bckodes_logo_3">
+      <rect width="200" height="200"/>
+    </clipPath>
+  </defs>
+  <g id="bckodes_logo_3" data-name="bckodes_logo – 3" clip-path="url(#clip-bckodes_logo_3)">
+    <g id="Group_4528" data-name="Group 4528" transform="translate(-92.958 -128.424)">
+      <g id="Group_4529" data-name="Group 4529">
+        <g id="Group_4527" data-name="Group 4527" transform="translate(260.393 59.047)">
+          <g id="Group_4526" data-name="Group 4526" transform="translate(-145.435 77.377)">
+            <path id="Path_5232" data-name="Path 5232" d="M104.262,61.874l-77.7,45.152.258-91.649Z" transform="translate(-26.565 -15.377)" fill="#dba53a"/>
+            <path id="Path_5237" data-name="Path 5237" d="M182.465,68.439l-77.7,45.152-78.2-45.152,77.691-45.152Z" transform="translate(-26.559 23.185)" fill="#bbecff"/>
+            <path id="Path_5238" data-name="Path 5238" d="M117.575,30.974l-.258,91.649-77.438-46.5Z" transform="translate(38.331 60.651)" fill="#0a3a7f"/>
+            <path id="Path_5239" data-name="Path 5239" d="M104.773,76.126,26.565,122.617V30.974Z" transform="translate(-26.564 60.651)" fill="#83c2e2"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

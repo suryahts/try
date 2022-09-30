@@ -1,0 +1,307 @@
+.br-50 {
+  border-radius: 50px;
+}
+.pt-6 {
+  padding-top: 75px;
+}
+.accordion-button::after {
+  -webkit-mask-image: url("../public/landing_page/down.svg") !important;
+  background-color: var(--color-secondparagraph);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 17px;
+  -webkit-mask-position: center 4px;
+}
+.accordion-button:not(.collapsed)::after{
+  background-color: #1c80ef !important;
+}
+:root {
+  --color-light-text: #777e90;
+  --color-Land-banner-bg: transparent
+    radial-gradient(
+      closest-side at 50% 50%,
+      rgba(192, 252, 217, 0.5) 0%,
+      rgb(255 255 255 / 50%) 100%
+    )
+    0% 0% no-repeat padding-box;
+  --color-TESTIMONAIL-bg: #fff;
+  --color-footer-bg: #f6f7fa;
+}
+[data-theme="dark"] {
+  --color-light-text: #aeb3c3;
+  --color-Land-banner-bg: transparent
+    radial-gradient(
+      closest-side at 50% 50%,
+      rgb(20 47 86) 0%,
+      rgba(22, 31, 48, 50%) 100%
+    )
+    0% 0% no-repeat padding-box;
+  --color-TESTIMONAIL-bg: #272f3e;
+  --color-footer-bg: #272f3e;
+}
+//
+.threeLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.landingPage {
+  padding-top: 60px;
+  .LandtitleLg {
+    font-family: SemiBold;
+    font-size: 44px;
+    line-height: 55px;
+  }
+  .Landtitle {
+    font-size: 24px;
+  }
+  .banner {
+    background: var(--color-Land-banner-bg);
+    padding: 80px 50px;
+    text-align: center;
+    position: relative;
+    .wolf {
+      width: 300px;
+      height: 320px;
+      animation: oscillate 0.7s;
+
+      @keyframes oscillate {
+        0% {
+          transform: scale(0.3);
+        }
+        50% {
+          transform: scale(0.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
+    .shape {
+      background-image: url("../public/landing_page/slider-shape.png");
+      background-size: 100%;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+    .LandtitleLg {
+      width: 50%;
+      margin: 0 auto;
+    }
+    .btns {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      button {
+        padding: 13px 30px;
+        border-radius: 10px;
+      }
+      .btn-white {
+        background: #fff;
+        border: 1px solid #e1e5ef;
+      }
+    }
+  }
+  .logoSlide {
+    .swiper-wrapper {
+      align-items: center;
+      .swiper-slide {
+        text-align: center;
+      }
+    }
+  }
+  #benefits {
+    .benbanner {
+      width: 95%;
+      height: 550px;
+      position: relative;
+    }
+    .Landtitle {
+      color: var(--color-light-text);
+    }
+  }
+  #testimonial {
+    .box {
+      background-color: var(--color-TESTIMONAIL-bg);
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 8px;
+      padding: 20px;
+      .profile {
+        border-radius: 50px;
+        border: 2px solid #ffffff !important;
+      }
+      .threeLine {
+        min-height: 65px;
+        color: var(--color-light-text);
+      }
+    }
+  }
+  #faq {
+    .accordion {
+      .accordion-item {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        background: transparent;
+        .accordion-header {
+          button {
+            background: transparent;
+            color: var(--color-paragraph);
+            outline: none;
+            padding-left: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            box-shadow: none !important;
+            font-size: 24px;
+          }
+        }
+        .accordion-body {
+          padding-left: 0;
+        }
+      }
+      .accordion-button:not(.collapsed) {
+        color: #1c80ef !important;
+      }
+    }
+  }
+  .joiningBox {
+    background-color: #e6f241;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    .Landtitle {
+      color: #212529 !important;
+    }
+    .bgbubble {
+      background-image: url("../public/landing_page/bubble.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 110px;
+      position: absolute;
+      display: block;
+      width: 200px;
+      height: 200px;
+      right: 13%;
+      bottom: -70px;
+      opacity: 0.7;
+    }
+    .bgbubble1 {
+      background-image: url("../public/landing_page/bubble.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 40px;
+      position: absolute;
+      display: block;
+      width: 80px;
+      height: 80px;
+      right: 1%;
+      bottom: 63px;
+      opacity: 0.9;
+    }
+    .parrot {
+      position: absolute;
+      top: -65px;
+      right: 35px;
+    }
+  }
+  footer {
+    background-color: var(--color-footer-bg);
+    .quickLink {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 15px;
+      a:after {
+        content: "";
+        height: 12px;
+        width: 1px;
+        background: #cdcdcd;
+        display: inline-block;
+        margin-left: 15px;
+      }
+      a:last-child:after {
+        display: none;
+      }
+    }
+    .emailSec {
+      input {
+        padding-right: 115px !important;
+      }
+      button {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+  @media (min-width: 1450px) {
+    .banner {
+      .shape {
+        background-size: 70%;
+      }
+      .LandtitleLg {
+        width: 33%;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .joiningBox .parrot,
+    .joiningBox .bgbubble,
+    .joiningBox .bgbubble1 {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .banner {
+      .Landtitle {
+        width: 75%;
+      }
+    }
+    .LandtitleLg {
+      width: 100% !important;
+      font-size: 34px;
+    }
+    //     footer {
+    //       .quickLink {
+    // margin-bottom: 30px;
+    //       }
+    //     }
+  }
+  @media (max-width: 575px) {
+    .banner {
+      padding: 20px;
+      .Landtitle {
+        font-size: 25px;
+        line-height: 35px;
+      }
+      .wolfparent {
+        height: 280px;
+      }
+      .wolf {
+        min-width: 200px !important;
+        min-height: 220px !important;
+      }
+      .btns {
+        button {
+          padding: 13px 15px;
+        }
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    .banner {
+      .Landtitle {
+        width: 100%;
+      }
+    }
+  }
+}

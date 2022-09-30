@@ -1,0 +1,234 @@
+@import "./variables.scss";
+@import "./commonStyles.scss";
+
+.homemain {
+  margin-top: 75px;
+  margin-bottom: 40px;
+  min-height: calc(100vh - 462px);
+}
+.titleSection {
+  display: flex;
+  justify-content: space-between;
+}
+.banner {
+  background: var(--color-banner-bg);
+  padding: 30px 0;
+  .title {
+    margin-bottom: 10px;
+  }
+  .secondary {
+    margin-bottom: 30px;
+  }
+}
+
+.bitsCard {
+  background-color: (var(--color-secondbackground));
+  box-shadow: 0px 3px 6px #00000029;
+  color: (var(--color-paragraph));
+  border-radius: 20px;
+  padding: 15px;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .profile > a {
+      &:first-child {
+        margin-left: 0 !important;
+      }
+      margin-left: -10px !important;
+      img{
+        border: 2px solid var(--color-background) !important;
+      border-radius: 20px;
+      }
+    }
+  }
+  .timer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    > div {
+      margin-top: -20px;
+      background-color: $red-color;
+      color: #fff;
+      font-size: $f-s;
+      padding: 5px 10px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      grid-gap: 0 7px;
+      z-index: 1;
+    }
+  }
+  .imgWraperHeight {
+    height: 150px;
+    position: relative;
+    span {
+      height: 100%;
+      img {
+        border-radius: 20px;
+      }
+    }
+  }
+  .bottom {
+    margin-top: 10px;
+    .price {
+      font-family: SemiBold;
+      color: $primary-color !important;
+      margin-bottom: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.topCollection {
+  .mycard {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    // margin-bottom: 20px;
+    padding: 10px 15px;
+    &:hover {
+      background-color: var(--color-secondbackgroundop);
+      border-radius: 20px;
+      box-shadow: $box-shadow;
+    }
+    .content {
+      flex: 1 auto;
+      overflow: hidden;
+      .name {
+        font-family: "SemiBold";
+        @include ellipsis;
+      }
+      .price {
+        font-size: $f-s;
+        color: var(--color-secondparagraph);
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .right {
+      text-align: right;
+      flex: 0 0 auto;
+      font-size: $f-s;
+      padding-left: 20px;
+      .price {
+        font-family: "SemiBold";
+        color: var(--color-secondparagraph);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.hotCollection {
+  .img {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    img {
+      border-radius: 10px;
+      background-color: #f6f7fa;
+    }
+  }
+  .profile {
+    margin-top: -30px;
+    margin-left: 15px;
+  }
+  .ProfileImage {
+    border-radius: 50px;
+    border: 2px solid #fff !important;
+  }
+  .detail {
+    margin-left: 90px;
+    margin-top: -25px;
+    .edition {
+      font-family: SemiBold;
+      @include ellipsis;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  // max-width: 350px;
+  overflow: hidden;
+  .contentDetails {
+    position: absolute;
+    background-color: var(--color-secondbackgroundop);
+    padding: 10px 15px;
+    border-radius: 25px;
+    width: 89%;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    .contentTitle {
+      color: var(--color-paragraph);
+      margin-bottom: 5px;
+      font-family: semiBold;
+      @include ellipsis;
+    }
+    .contentText {
+      margin-bottom: 0;
+      font-size: $f-s;
+      color: $primary-color;
+      @include ellipsis;
+    }
+  }
+
+  &:hover .contentDetails {
+    bottom: -15px;
+    left: 50%;
+    opacity: 1;
+  }
+
+  .fadeInBottom {
+    bottom: -30%;
+  }
+}
+
+@media (max-width: 767px) {
+  .homemain {
+    margin-top: 124px;
+  }
+}
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .banner {
+    .leftcontent {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .hotCollection,
+  .topCollection {
+    .title {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .titleSection {
+    align-items: center;
+    flex-direction: column;
+    gap: 15px 0;
+  }
+}

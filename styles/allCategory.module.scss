@@ -1,0 +1,21 @@
+@import "./variables.scss";
+@import "./commonStyles.scss";
+
+.filter {
+  .dropDrown {
+    .dropdown-toggle {
+      border: 1px solid $border-color !important;
+      border-radius: 20px !important;
+      padding: 5px 15px 5px 25px !important;
+    }
+    .dropdown-menu {
+      min-width: 200px;
+      max-width: 230px;
+    }
+    &.category .dropdown-toggle {
+      background-color: red;
+      width: 5px;
+      height: 5px;
+    }
+  }
+}
